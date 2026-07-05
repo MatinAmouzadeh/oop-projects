@@ -19,6 +19,14 @@
 
 ---
 
+## فایل ذخیره‌سازی تاریخچه
+
+این پروژه از فایل `CalculatorFile.txt` برای ذخیره تاریخچه محاسبات استفاده می‌کند.
+
+در صورت اجرای برنامه، نتایج محاسبات می‌توانند در این فایل ذخیره شوند.
+
+---
+
 ## تکنولوژی‌های استفاده‌شده
 
 - Java
@@ -66,6 +74,14 @@ The goal of this project is to practice object-oriented programming, graphical u
 - Simple JavaFX user interface
 - Event handling practice
 - Class design practice in Java
+
+---
+
+## History Storage File
+
+This project uses `CalculatorFile.txt` to store calculation history.
+
+When the application runs, calculation results can be saved in this file.
 
 ---
 
