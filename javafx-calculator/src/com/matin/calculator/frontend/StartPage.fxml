@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" onKeyPressed="#onKeyPressed" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.matin.calculator.frontend.StartPage">
+   <children>
+      <VBox layoutY="2.0" prefHeight="550.0" prefWidth="335.0">
+         <children>
+            <AnchorPane prefHeight="212.0" prefWidth="335.0" style="-fx-background-color: #000110;">
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" layoutX="124.0" prefHeight="154.0" prefWidth="211.0" style="-fx-background-color: #000000;" vbarPolicy="ALWAYS">
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
+                     <content>
+                        <Label fx:id="lblDisplay" prefHeight="153.0" prefWidth="199.0" style="-fx-background-color: #000000;" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane fitToHeight="true" hbarPolicy="NEVER" prefHeight="154.0" prefWidth="126.0" style="-fx-background-color: #000000;" vbarPolicy="ALWAYS">
+                     <content>
+                        <Label fx:id="lblHistory" prefHeight="155.0" prefWidth="113.0" style="-fx-background-color: #000000;" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                     </content>
+                  </ScrollPane>
+                  <ProgressBar fx:id="ProgressPercentage" layoutX="58.0" layoutY="161.0" prefHeight="18.0" prefWidth="219.0" progress="0.0" />
+                  <Button fx:id="btnSave" layoutX="9.0" layoutY="155.0" mnemonicParsing="false" onAction="#btnSavePressing" prefHeight="25.0" prefWidth="44.0" text="Save" />
+                  <Button fx:id="btnLoad" layoutX="281.0" layoutY="155.0" mnemonicParsing="false" onAction="#btnLoadPressing" prefHeight="25.0" prefWidth="44.0" text="Load" />
+               </children></AnchorPane>
+            <AnchorPane prefHeight="310.0" prefWidth="335.0">
+               <children>
+                  <HBox layoutX="4.0" layoutY="14.0" prefHeight="318.0" prefWidth="327.0">
+                     <children>
+                        <VBox prefHeight="400.0" prefWidth="83.75">
+                           <children>
+                              <Button fx:id="btnMod" mnemonicParsing="false" onAction="#btnModPressing" prefHeight="66.0" prefWidth="80.0" text="\%" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnCE" mnemonicParsing="false" onAction="#btnCEPressing" prefHeight="66.0" prefWidth="80.0" text="CE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btn7" mnemonicParsing="false" onAction="#btn7Pressing" onKeyPressed="#btn7Pressing" prefHeight="66.0" prefWidth="80.0" text="7">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btn4" mnemonicParsing="false" onAction="#btn4Pressing" prefHeight="66.0" prefWidth="80.0" text="4">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btn1" mnemonicParsing="false" onAction="#btn1Pressing" prefHeight="66.0" prefWidth="80.0" text="1">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnNegate" mnemonicParsing="false" onAction="#btnNegatePressing" prefHeight="66.0" prefWidth="80.0" text="±">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="414.0" prefWidth="83.0">
+                           <children>
+                              <Button fx:id="btnSqrt" mnemonicParsing="false" onAction="#btnSqrtPressing" prefHeight="66.0" prefWidth="80.0" text="√" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnC" mnemonicParsing="false" onAction="#btnCPressing" prefHeight="66.0" prefWidth="80.0" text="C">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btn8" mnemonicParsing="false" onAction="#btn8Pressing" prefHeight="66.0" prefWidth="80.0" text="8">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btn5" mnemonicParsing="false" onAction="#btn5Pressing" prefHeight="66.0" prefWidth="80.0" text="5">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btn2" mnemonicParsing="false" onAction="#btn2Pressing" prefHeight="66.0" prefWidth="80.0" text="2">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btn0" mnemonicParsing="false" onAction="#btn0Pressing" prefHeight="66.0" prefWidth="80.0" text="0">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="400.0" prefWidth="83.75">
+                           <children>
+                              <Button fx:id="btnPow" mnemonicParsing="false" onAction="#btnPowPressing" prefHeight="66.0" prefWidth="80.0" text="^" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBackspace" mnemonicParsing="false" onAction="#btnBackspacePressing" prefHeight="66.0" prefWidth="80.0" text="⌫">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btn9" mnemonicParsing="false" onAction="#btn9Pressing" prefHeight="66.0" prefWidth="80.0" text="9">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btn6" mnemonicParsing="false" onAction="#btn6Pressing" prefHeight="66.0" prefWidth="80.0" text="6">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btn3" mnemonicParsing="false" onAction="#btn3Pressing" prefHeight="66.0" prefWidth="80.0" text="3">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnDot" mnemonicParsing="false" onAction="#btnDotPressing" prefHeight="66.0" prefWidth="80.0" text=".">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="380.0" prefWidth="82.0">
+                           <children>
+                              <Button fx:id="btnFactorial" mnemonicParsing="false" onAction="#btnFactorialPressing" prefHeight="66.0" prefWidth="83.75" text="!">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnDivide" mnemonicParsing="false" onAction="#btnDividePressing" prefHeight="66.0" prefWidth="83.75" text="÷" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnMultiply" mnemonicParsing="false" onAction="#btnMultiplyPressing" prefHeight="66.0" prefWidth="83.75" text="X">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnSubtract" mnemonicParsing="false" onAction="#btnSubtractPressing" prefHeight="66.0" prefWidth="83.75" text="-" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#btnAddPressing" prefHeight="66.0" prefWidth="83.75" text="+">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnEquals" mnemonicParsing="false" onAction="#btnEqualsPressing" prefHeight="66.0" prefWidth="83.75" text="=">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="5.0" layoutY="-29.0" prefHeight="40.0" prefWidth="327.0">
+                     <children>
+                        <Button fx:id="btnMemorySubtract" mnemonicParsing="false" onAction="#btnMemorySubtractPressing" prefHeight="45.0" prefWidth="54.0" text="M-">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnMemoryAdd" mnemonicParsing="false" onAction="#btnMemoryAddPressing" prefHeight="45.0" prefWidth="54.0" text="M+">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnMemoryMultiply" mnemonicParsing="false" onAction="#btnMemoryMultiplyPressing" prefHeight="45.0" prefWidth="54.0" text="Mx">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnMemoryDivide" mnemonicParsing="false" onAction="#btnMemoryDividePressing" prefHeight="45.0" prefWidth="54.0" text="M÷">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnMemoryClear" mnemonicParsing="false" onAction="#btnMemoryClearPressing" prefHeight="45.0" prefWidth="54.0" text="MC">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnMemoryRecall" mnemonicParsing="false" onAction="#btnMemoryRecallPressing" prefHeight="45.0" prefWidth="54.0" text="MR">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
