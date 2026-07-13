@@ -14,9 +14,9 @@
 
 | Project | Description | Technologies |
 | --- | --- | --- |
-| `javafx-calculator/` | ماشین‌حساب ساده با JavaFX همراه با ذخیره تاریخچه محاسبات | Java, JavaFX, FXML |
-| `javafx-paint-app/` | برنامه نقاشی ساده با JavaFX و مدیریت شکل‌ها و تاریخچه | Java, JavaFX, FXML |
-| `improved-java-game/` | نسخه بهبودیافته یک بازی آموزشی Java / OOP به سبک Brick Breaker همراه با ابزار طراحی نقشه | Java, Swing, AWT, OOP |
+| `javafx-calculator/` | ماشین‌حساب ساده با جاوا اف ایکس همراه با ذخیره تاریخچه محاسبات | Java, JavaFX, FXML |
+| `javafx-paint-app/` | برنامه نقاشی ساده با جاوا اف ایکس و مدیریت شکل‌ها و تاریخچه | Java, JavaFX, FXML |
+| `improved-java-game/` | نسخه ی بهبود یافته ی یک بازی آموزشی همراه با ابزار طراحی نقشه Brick Breaker به سبک Java/oop | Java, Swing, AWT, OOP |
 
 ---
 
